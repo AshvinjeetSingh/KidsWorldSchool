@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<style>
+    *
+    {
+        border:none;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body
+    {
+        background-image: url("./images/main-slider/image-1.jpg");
+        background-size:cover ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        
+    }
+
+    body::after
+    {
+        z-index:-1;
+        position: absolute;
+        height:100vh;
+        background: linear-gradient(rgba(0,0,255,0.5),rgba(255,0,0,0.5));
+        content: '';
+        width:100%;
+    }
+
+    .container
+    {
+        background-color: rgba(255,255,255,0.8);
+        text-align: center;
+        text-transform: capitalize;
+        padding: 3em;
+    }
+
+    h1
+    {
+        margin:5px 0px
+    }
+
+    h2
+    {
+        margin: 5px 0px;
+    }
+
+    button
+    {
+        padding:1rem;
+        background: black;
+        margin:5px 0px;
+    }
+    a
+    {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size:16px;
+        color:white;
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Congratulations!!!</h1>
+        <h2>Your messsage has been sent successfully.</h2>
+        <button>
+            <a href="./index.html">go to home screen</a>
+        </button>
+    </div>
+    
+    
+</body>
+</html>
